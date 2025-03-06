@@ -1,11 +1,11 @@
-version: '3.8'
+version: "3.8"
 services:
   server:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8000:8000
+      - 8081:8000
     restart: unless-stopped
     environment:
       DATABASE_URL: "postgres://postgres:postgres@db:5432/horilla"
